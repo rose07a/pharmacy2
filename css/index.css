@@ -1,0 +1,1447 @@
+* {
+	margin: 0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px "Quicksand", sans-serif;
+}
+
+hr{
+	width: 50%;
+	margin: 20px auto;
+	border: #1B4821 solid 1px;
+}
+
+li,
+nav {
+	list-style: none;
+}
+
+a { 
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+a:hover {
+	text-decoration: underline;
+	opacity: 1;
+}
+
+h1{
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+	word-break: break-all;
+}
+
+.h1{
+	color:#1B4821;
+}
+
+.big{
+	font-size:50px;
+	word-break: break-all;
+	margin: 20px;
+}
+
+h2{
+	text-transform: capitalize;
+	font-size: 25px;
+	margin: 20px;
+}
+
+h3{
+	text-transform: capitalize;
+	font-size: 20px;
+	margin: 10px;
+	line-height: 2;
+}
+
+p{
+	font-size:17px;
+	line-height: 2;
+	padding-left: 7px;
+}
+
+i{
+	font-size:30px;
+}
+
+li i{
+	font-size: 20px;
+}
+
+li{
+	margin:7px;
+	line-height: 1.5;
+}
+
+.left{
+	text-align: left;
+	margin-left:0;
+}
+
+.justleft{
+	text-align:left;
+}
+
+.lightgreen{
+	background:#F0F8FF;
+}
+
+.button{
+	width:250px;
+	height:40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color: #FEDE5E;
+	opacity: 1;
+	padding: 10px 30px;
+	margin:5px;
+	margin-right: 50px;
+}
+
+.button:hover{
+  opacity:0.9;
+}
+
+
+section{
+	width:100%;
+    margin:0 auto;
+    padding:40px 0;
+}
+
+
+
+/*first***********************************************************/
+
+
+.first{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100%;
+	align-items: center;
+	height:160px;
+	margin: 5px 0;
+}
+
+.first img{
+	width:100px;
+}
+
+.first .button{
+	width:300px;
+	height:40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color:  #FEDE5E;
+	opacity: 1;
+	padding: 10px 30px;
+	margin:5px;
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .first{
+  	height:300px;
+  	flex-direction: column;
+  	justify-content: center;
+  	text-align: center;
+  }
+
+  .first img{
+	width:100px;
+}
+  .flex a{
+  	flex-basis: 100%;
+  }
+
+  .first .button{
+	width:70%;
+	margin: 5px auto;
+ }
+  
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+/*vetytop***********************************************************/
+
+.verytop{
+	margin:0 auto;
+	padding:0;
+	background-color: #1B4821;
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 13;
+    border-bottom: solid #fff 3px;
+}
+
+/* Add a black background color to the top navigation */
+.verytop .topnav2{
+  background-color: #1B4821;
+  overflow: hidden; 
+}
+
+/* Style the links inside the navigation bar */
+.verytop .topnav2 a{
+  float: left;
+  display: block;
+  color: #fff;
+  background-color: #1B4821;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.verytop .topnav2 a:hover{
+	text-decoration: underline;
+}
+
+/* Add an active class to highlight the current page */
+.verytop .active {
+  color: #fff;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.verytop .topnav2 .icon2 {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.verytop .dropdown2 {
+  float: left;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.verytop .dropdown2 .dropbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.verytop .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #1B4821;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+
+/* Style the links inside the dropdown */
+.verytop .dropdown-content2 a {
+  float: none;
+  color: #fff;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.verytop .topnav2 a:hover, .verytop .dropdown2:hover .dropbtn2 {
+  background-color: #1B4821;
+  color: #fff;
+}
+
+/* Add a grey background to dropdown links on hover */
+.verytop .dropdown-content2 a:hover {
+  background-color: #1B4821;
+  color: #fff;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.verytop .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+ Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1100px) {
+  .verytop .topnav2 a:not(:first-child), .verytop .dropdown2 .dropbtn2 {
+    display: none;
+  }
+  .verytop .topnav2 a.icon2 {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1100px) {
+  .verytop .topnav2.responsive2 {position: relative;}
+  .verytop .topnav2.responsive2 .icon2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .verytop .topnav2.responsive2 a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .verytop .topnav2.responsive2 .dropdown2 {
+  	float: none;
+  }
+  
+  .verytop .dropdown2{
+  	margin-left:20px;
+  }
+
+  .verytop .topnav2.responsive2 .dropdown-content2 {
+  	position: relative;
+  }
+
+  .verytop .topnav2.responsive2 .dropdown2 .dropbtn2 {
+    display: block;
+    width: 100%;
+    text-align:left;
+    margin-left:10px;
+  }
+
+ }
+
+
+/*nav***********************************************************/
+
+header{
+    position:absolute;
+	z-index: 10;
+	width:100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #1B4821;
+  overflow: hidden;
+  
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav a:hover{
+	text-decoration: underline;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #1B4821;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  margin-left: 60px;
+  overflow: hidden;
+}
+
+
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1B4821;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #1B4821;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1B4821
+  color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1100px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1100px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+  	float: none;
+  }
+  
+  .dropdown{
+  	margin-left:20px;
+  }
+
+  .topnav.responsive .dropdown-content {
+  	position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align:left;
+    margin-left:10px;
+  }
+
+ }
+
+/*************************************************************************/
+
+.hero2 {
+	position: relative;
+	/*justify-content: center;
+	text-align: center;*/
+	height: 580px;
+	color: #fff;
+}
+
+.hero2 .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	z-index: -1;
+
+}
+
+.hero2 h1 {
+	font: bold 60px "Quicksand", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero2 h3 {
+	font: normal 28px "Quicksand", sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero2 a.btn {
+	padding: 20px 46px;
+}
+
+.hero2 .hero-content-area {
+	position:absolute;
+	top:20%;
+	left:30%;
+	padding:15px;
+	opacity: 0;
+	width: 600px;
+	animation: 1s slidefade 1s forwards;
+	background: rgba(182, 225, 252, 0.5);
+    color: #000;
+	z-index: 2;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero2 {
+		height: 400px;
+	}
+
+	.hero2 h1 {
+		font-size: 48px;
+	}
+
+	.hero2 h3 {
+		font-size: 24px;
+	}
+
+	.hero2 a.btn {
+		padding: 10px 40px;
+	}
+
+   .hero2 .hero-content-area{
+   	width:250px;
+   	top:25%;
+   	left:16%;
+   }
+}
+
+
+/*hero-image***********************************************************/
+
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	height: 500px;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	z-index: -1;
+
+}
+
+.hero h1 {
+	font: bold 60px "Quicksand", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: normal 28px "Quicksand", sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn {
+	padding: 20px 46px;
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 130px;
+	animation: 1s slidefade 1s forwards;
+	background-color: #1B4821 0.5;
+	z-index: 2;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		height: 400px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
+}
+
+
+/*About Us***********************************************************/
+.story{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.story .storyimg{
+	flex-basis:50%;
+}
+
+.story .storyp{
+	flex-basis:50%;
+}
+
+.story img{
+	width:500px;
+	padding: 30px;
+	background-size:cover;
+	border-radius: 8%;
+}
+
+@media (max-width: 1100px) {
+  .story .storyimg{
+	flex-basis:90%;
+   } 
+
+   .story .storyp{
+	flex-basis:90%;
+   }
+
+}
+
+.half{
+	width:70%;
+	text-align: left;
+}
+
+
+.staff{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width:70%;
+	padding: 10px;
+	align-items: center;
+}
+
+.staff img{
+	width:300px;
+    margin:50px;
+    border-radius: 50%;
+}
+
+.staff div{
+	flex-basis: 80%;
+}
+
+@media (max-width: 1100px) {
+	.story img{
+		width:90%;
+	}
+
+	.story p{
+	width: 90%;
+    }
+
+    .staff{
+    	width:100%;
+    	flex-direction: column;
+    }
+
+	.staff div{
+		width:80%;
+	}
+
+    .staff img{
+    	width: 300px;
+    }
+
+	.half{
+		flex-direction: column;
+	}
+
+	.half img{
+	    width:100%;
+	    width: 300px;
+    }
+	.half .one{
+      flex-basis:90%;
+	}
+	.half .two{
+	  flex-basis:90%;
+	}
+}
+
+
+
+
+
+/*band***********************************************************/
+
+
+.band img{
+  width:100%;
+  height: 500px;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: #000, 0.8;
+
+  /* Set a specific height */
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+}
+
+/* Place text in the middle of the image */
+.band-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  color: white;
+}
+
+.band-text a.button{
+	margin: 20px auto;
+}
+
+.band .h2{
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .band-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .band img{
+    height: 400px;
+  }
+
+  .band-text{
+  	width:100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*first2***********************************************************/
+.nopadding{
+	padding:0;
+}
+
+.first2section{
+	background-image: url('../img/color.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    width:100%;
+    height:400px;
+    position:relative;
+    top:10px;
+    left:0;
+}
+
+.first2{
+  position:absolute;
+  top:20%;
+  left:15%;
+  width:70%;
+  height: 150px;         
+  color:#fff;
+  border:5px white solid;
+}
+
+.first2 a{
+	padding: 10px 30px;
+	border-radius: 10px;
+	background-color: #022045;
+}
+
+@media screen and (max-width: 1100px) {
+  .first2 h1{
+    font-size:25px;
+  }
+
+  .first2 a{
+  	font-size: 18px;
+  	background-color: #022045;
+  	padding: 10px 20px;
+  }
+
+  .first2{
+  	top:30%;
+  	left:15%;
+  	height:150px;
+  }
+}
+
+
+/*Patient***********************************************************/
+
+.patient{
+	width: 70%;
+	text-align: left;
+}
+
+.patient div {
+	width:100%;
+	background-color: #F0F8FF;
+	padding:10px;
+	padding-bottom:15px;
+}
+
+.patient h1{
+	text-align:left;
+	margin-left:0;
+}
+
+.patient h2{
+	text-align:left;
+	margin-left:0;
+}
+
+.patient h3{
+	text-align:left;
+	margin-left:0;
+}
+
+.patient a{
+	color:#000;
+}
+
+.patient li{
+	list-style:none;
+}
+
+.patient i{
+    font-size: 10px;
+}
+
+a.tele{
+	width:80%;
+	height:auto;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color: #1B4821;
+	color: #fff;
+	opacity: 1;
+	padding: 10px 10px;
+}
+
+.download{
+	padding:15px;
+	border: solid 3px #1B4821;
+}
+
+.download li{
+	font-size: 20px;
+	text-decoration-line: bottom;
+	color: #1B4821;
+}
+
+.download i{
+	font-size: 30px;
+    color:#1B4821;
+}
+
+
+
+@media screen and (max-width: 1100px){
+	.patient{
+	 width: 90%;
+	}
+
+	a.tele{
+		font-size:15px;
+	}
+}
+
+/*Faqs***********************************************************/
+
+.faqs{
+	margin-bottom: 150px;
+}
+
+
+.faq{
+  width: 60%;
+  margin: 10px 0;
+  text-align:left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.faq .accordion i{
+	float: right;
+	padding-left: 50px;
+	font-size: 10px;
+}
+
+.faq li{
+	list-style: circle;
+}
+
+
+@media screen and (max-width: 1100px){
+	.faq{
+	 width: 100%;
+	}
+}
+
+.accordion {
+  background-color: #1B4821;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.active, .accordion:hover {
+  background-color: #5CB878;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel i{
+	font-size: 16px;
+}
+
+/*placetext****************************************************************/
+
+.placetext{
+	display: flex;
+	flex-direction: row;
+	margin: 40px auto;
+	flex-wrap: wrap;
+}
+
+.placetext .container {
+  flex-basis: 32%;
+  width:100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom:20px;
+}
+
+.placetext .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 20px;
+  font-size: 20px;
+  border: #fff 2px solid;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.placetext img{
+	width:100%;
+	height: 300px;
+	background: border-box cover;
+    filter: brightness(0.5);
+    border-radius: 10%;
+}
+
+.placetext img:hover{
+	filter: grayscale(0%);
+}
+
+@media (max-width: 800px) {
+	.placetext{
+		flex-direction: column;
+	}
+
+	.placetext .container {
+        flex-basis: 100%;
+    }
+
+    .placetext img{
+    	width:90%;
+    	margin:5px 0;
+    }
+}
+
+/*treatments grid***********************************************************/
+
+.row {
+  width:70%;
+  text-align: center;
+  align-items: center;
+}
+
+
+.column{
+  width:100%;
+  text-align: center;
+  padding: 5px;
+  }
+
+.column h3{
+  color:#406661
+}
+
+.row img{
+	width:100%;
+	background-size:cover;
+	height:350px;
+	filter: brightness(0.7);
+}
+
+.row h2{
+	color: #1B4821;
+}
+
+.row li{
+	text-align: left;
+	margin-left: 50px;
+	margin-bottom: 11px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .row{
+  	width:90%;
+  }
+
+  .column{
+  width:100%;
+  }
+}
+
+/*resources***********************************************************************/
+
+.resources{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px auto;
+	width: 90%;
+	text-align: center;
+	align-items: center;
+}
+
+.resources a{
+	width:250px;
+	height:40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color: #FEDE5E;
+	opacity: 1;
+	padding: 10px 30px;
+	margin:20px;
+	margin-right: 50px;
+}
+
+.resources .one{
+	flex-basis: 50%;
+}
+
+.resources .two{
+    flex-basis: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .resources {
+  	flex-direction: column;
+  	width: 90%;
+  }
+
+  .resources .one{
+  	flex-basis: 100%;
+  }
+
+  .resources .two{
+  	flex-basis: 100%;
+  }
+
+  .resources iframe{
+  	width:350px;
+  }
+
+  .resources img{
+  	width:100%;
+  }
+
+}
+
+/*Gallery***************************************************************/
+
+
+
+/*footer***************************************************************/
+
+footer{
+	padding:0 20px;
+	background-color: #1B4821;
+	padding-top:40px;
+}
+
+footer img{
+	width: 300px;
+}
+
+.footergrid{
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-evenly;
+    background-color: #1B4821;
+	color: #fff;
+	padding: 5px 0;
+}
+
+.footergrid div{
+	flex-basis: 30%;
+	background-color:#1B4821;
+	text-align:left;
+}
+
+footer li{
+	text-align: left;
+	padding:5px 0;
+}
+
+footer i{
+   font-size:25px;
+   color:#fff;
+}
+
+
+footer p{
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 15px;
+}
+
+footer hr{
+	margin: 10px auto;
+	width:90%;
+	border: #Fff solid 2px;
+}
+
+
+@media (max-width: 800px) {
+    footer{
+    	text-align: left;
+    }
+
+	.footergrid {
+		flex-direction: column;
+	}
+
+	footer a{
+		text-align: left;
+	}
+
+	footer p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	footer div{
+		text-align: left;
+		margin-bottom: 10px;
+	    margin: 5%;
+	}
+
+	.footergrid li{
+		text-align: left;
+	}
+
+	footer .center{
+        text-align: center;
+	}
+
+} 
+
+
+
+.yellow{
+	color: #FEDE5E;
+}
+
+
+
+.info2{
+    width:50%;
+    text-align: center;
+}
+
+.each{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px auto;
+	text-align: left;
+
+}
+
+.each h2{
+    font-size:25px;
+}
+
+.each iframe{
+    width:95%;
+    height:400px;
+}
+
+.each a{
+    color:#000;
+}
+
+.info{
+	padding-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+    .info2{
+        width:100%;
+    }
+
+	.each iframe{
+        width:90%;
+	}
+
+    .each div{
+        font-size:17px;
+    }
+}
+
+
+.cent{
+	text-align: center;
+}
+
+
+.he {
+	position: relative;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	height: 700px;
+}
+
+.he .back-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.he h1 {
+	font: bold 60px;
+	margin-bottom: 15px;
+}
+
+.he h3 {
+	font: normal 28px;
+	margin-bottom: 40px;
+}
+
+.he a.btn {
+	margin: 10px;
+	padding: 20px 46px;
+	background-color: #FFD95E;
+}
+
+.he .hero-content-area {
+	position:absolute;
+	top:35%;
+	left:40%;
+	opacity: 0;
+	animation: 1s slidefade 1s forwards;
+}
+
+.he .hero-content-area img{
+	width:200px;
+	margin-bottom: 50px;
+}
+
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 1100px) {
+	.he {
+		height: 500px;
+	}
+
+	.he h1 {
+		font-size: 48px;
+	}
+
+	.he h3 {
+		font-size: 24px;
+	}
+
+	.he a.btn {
+		margin: 20px;
+		padding: 20px 20px;
+	}
+
+	.he{
+		background-size: cover;
+		background-position:center;
+	}
+
+	.he .hero-content-area {
+		top:25%;
+		left:30%;
+	}
+}
+
+
+/*slider**************************************************************/
+
+
+#slider {
+	height:700px;
+	position: relative;
+	margin:0;
+}
+
+.slider_item {
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top:0;
+	width:100%;
+	z-index: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition:all .5s ease-in-out;
+	transform: scale(0.9);
+}
+.slider_item img {
+	height:100%;
+}
+
+.slider_item:nth-child(odd){
+	background-color:#Fff;
+}
+.slider_item:nth-child(even){
+	background-color:#FFf;
+}
+.showing{
+	opacity: 1;
+	z-index: 1;
+	transform: none;
+}
+
+@media (max-width: 1100px) {
+.slider_item{
+height:500px;
+background-position: center;
+background-size: contain;
+
+}
+
+.slider_item img {
+background-position: center;
+background-size: contain;
+}
+
+}
