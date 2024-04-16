@@ -1105,8 +1105,8 @@ a.tele{
     justify-content: center;
     margin: 40px auto;
 	width: 90%;
-	text-align: center;
-	align-items: center;
+	text-align: left;
+	align-items: left;
 }
 
 .resources a{
@@ -1130,6 +1130,7 @@ a.tele{
 }
 
 .resources .two{
+    text-align: left;
     flex-basis: 50%;
 }
 
@@ -1534,4 +1535,13 @@ background-size: contain;
        padding: 10px;
        color:#fff;
        font-weight: 900;
+   }
+
+
+   .leftleft{
+    text-align: left;
+   }
+
+   .first a, .resources a{
+    color:#000;
    }
