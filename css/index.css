@@ -358,7 +358,7 @@ header{
   float: left;
   display: block;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
@@ -1156,6 +1156,10 @@ a.tele{
   	width:100%;
   }
 
+  .resources .leftleft{
+    margin-left:3%;
+  }
+
 }
 
 /*Gallery***************************************************************/
@@ -1290,6 +1294,10 @@ footer hr{
 }
 
 @media (max-width: 800px) {
+    .info{
+        margin-left:5%;
+    }
+
     .info2{
         width:100%;
     }
@@ -1406,6 +1414,7 @@ footer hr{
 	height:700px;
 	position: relative;
 	margin:0;
+    padding-bottom: 20px;
 }
 
 .slider_item {
@@ -1421,9 +1430,11 @@ footer hr{
 	opacity: 0;
 	transition:all .5s ease-in-out;
 	transform: scale(0.9);
+    padding-bottom: 20px;
 }
 .slider_item img {
 	height:100%;
+    padding-bottom: 20px;
 }
 
 .slider_item:nth-child(odd){
