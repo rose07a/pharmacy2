@@ -12,52 +12,19 @@
 </head>
 <body>
 
-	<div class="verytop" id="toptop">
-		<div class="topnav2" id="myTopnav2">
-
-		 <div class="dropdown2"><a href="index.html"><img src="logo/logo2.jpg" style="width:150px;">
-        </a>
-		 </div>
-
-         <div class="dropdown2">
-            <button class="dropbtn2"><a href="tel:+1-541-844-7270">541-844-7270</a>
-               
-           </button>
-           
-          </div> 
-
-         <div class="dropdown2">
-          <button class="dropbtn2"><a href="#aboutus">ABOUT US</a>
-             
-         </button>
-         
-        </div> 
-
-        <div class="dropdown2">
-          <button class="dropbtn2"><a href="contact.html">LOCATION</a>
-             
-         </button>
-         
-        </div> 
-
-        <div class="dropdown2">
-          <button class="dropbtn2"><a href="treatments.html">SERVICES</a>
-             
-         </button>
-        </div> 
-
-
-           <a href="javascript:void(0);" class="icon2" onclick="myFunction2()">&#9776;</a>
-        </div>
+    <div class="verytop3" id="toptop3">
+		<ul>
+      <li><a href="tel:+1-541-844-7270"><i class="fas fa-mobile-alt"></i> 541-844-7270</a></li>
+      <li><i class="far fa-clock"></i><a href="#location"> Hours</a></li>
+      <li><i class="fas fa-map-marked-alt"></i><a href="#location"> Location</a></li>
+    </ul>
 	</div>
-
 
 
     <section class="first">    
         	<a href="index.html"><img src="logo/logo1.png"></a>
           <h1>TRACK TOWN PHARMACY</h1>
-        	<a href="tel:+1-541-844-7270" class="button">Call Us Todat</a>
-            <a href="tel:+1-541-844-7270" class="button">Location</a>
+          <a href="tel:+1-541-844-7270" class="button">Call Us Today</a>
     </section>
 
 	<header>
@@ -72,21 +39,21 @@
               </div> 
 
             <div class="dropdown">
-             <button class="dropbtn"><a href="about.html">ABOUT US</a>
+             <button class="dropbtn"><a href="#aboutus">ABOUT US</a>
                 
             </button>
             
            </div> 
    
            <div class="dropdown">
-             <button class="dropbtn"><a href="contact.html">LOCATION</a>
+             <button class="dropbtn"><a href="#location">LOCATION</a>
                 
             </button>
             
            </div> 
    
            <div class="dropdown">
-             <button class="dropbtn"><a href="treatments.html">SERVICES</a>
+             <button class="dropbtn"><a href="#services">SERVICES</a>
                 
             </button>
             
@@ -98,9 +65,9 @@
 
 	 </header>
 
-   <section class="he">
+   <section class="hee">
 
-    <div class="back-image" id="slider" style="background-image: #000">
+    <div class="back-image" id="slider">
       <div class="slider_item">
         <img src="./img/drug1.jpg">
       </div>
@@ -116,11 +83,11 @@
     </div>
 
     <div class="hero-content-area">
-      <img src="./logo/logo1.png">
-      <div>
+      <img src="./img/logo3.png">
+      <!-- <div>
         <a href="https://direct.chownow.com/order/26170/locations/38774" target="_blank" class="btn">
           Click For Order</a>
-        </div>
+        </div> -->
     
       </div>
 
@@ -136,13 +103,13 @@
     <div class="two">
       <h1 class="h1 left">About Us</h1>
      
-      <p class="left">Hi! <strong>We just opened a brand-new pharmacy in Eugene.</strong><br>
+      <p class="left"><strong>Hi! We just opened a brand-new pharmacy in Eugene.<br>
         We love to earn your business and we will do our best to find a best
-         prices and fill your prescriptions in timely manner. <br>Thank you! </p><br>
+         prices and fill your prescriptions in timely manner. <br>Thank you! </strong></p><br>
          <a href="tel:+1-541-844-7270" class="button">Call Us Today</a> </div>
   </section>
 
-  <section class="resources lightgreen">
+  <section class="resources lightgreen" id="services">
     <div class="one">
       <img src="img/covid.jpg" width="550px"> 
     </div>
@@ -150,9 +117,9 @@
     <div class="two">
       <h1 class="h1 left">Covid Vaccination Boosters</h1>
      
-      <p class="left">As a pharmacy we are certified to give a variety of 
+      <p class="left"><strong>As a pharmacy we are certified to give a variety of 
         immunizations including COVID-19, flu, and pneumonia.<br>
-        Please give us a call to <strong>schedule an appointment or walk-in is welcome.</strong></p><br>
+        Please give us a call to schedule an appointment or walk-in is welcome.</strong></p><br>
          <a href="tel:+1-541-844-7270" class="button">Call Us Today</a> </div>
   </section>
 
@@ -248,13 +215,10 @@
  	  	<div>
 
 			<ul>
-				<li><a href="index.html" >Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="contact.html">Location</a></li>
-				<li><a href="treatments.html">Treatments</a></li>
-				<li><a href="patient.html">Patient Information</a></li>
-				<li><a href="resources.html">Patient Resources</a></li>
-				<li><a href="faqs.html">FAQs</a></li>
+				<li><a href="index.html" >Back To Top</a></li>
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#location">Location</a></li>
+				<li><a href="#services">Services</a></li>
 			</ul>
 
 		</div>
@@ -356,10 +320,21 @@ function scrollFunction() {
         }
 
         slide();
-        setInterval(slide, 2000)
+        setInterval(slide, 2500)
    </script>
 
-  
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("toptop3").style.top = "0";
+      } else {
+        document.getElementById("toptop3").style.top = "-60px";
+      }
+    }
+    </script>
 
  
 

@@ -1308,49 +1308,52 @@ footer hr{
 }
 
 
-.he {
+.hee {
 	position: relative;
 	display:flex;
 	justify-content: center;
 	text-align: center;
 	height: 700px;
+    background-color: #1B4821;
+    z-index: -100;
 }
 
-.he .back-image {
+.hee .back-image {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background-size: cover;
+    background-color: #1B4821;
 	z-index: -1;
 }
 
-.he h1 {
+.hee h1 {
 	font: bold 60px;
 	margin-bottom: 15px;
 }
 
-.he h3 {
+.hee h3 {
 	font: normal 28px;
 	margin-bottom: 40px;
 }
 
-.he a.btn {
+.hee a.btn {
 	margin: 10px;
 	padding: 20px 46px;
 	background-color: #FFD95E;
 }
 
-.he .hero-content-area {
+.hee .hero-content-area {
 	position:absolute;
 	top:35%;
-	left:40%;
+	left:30%;
 	opacity: 0;
 	animation: 1s slidefade 1s forwards;
 }
 
-.he .hero-content-area img{
-	width:200px;
+.hee .hero-content-area img{
+	width:500px;
 	margin-bottom: 50px;
 }
 
@@ -1363,31 +1366,34 @@ footer hr{
 }
 
 @media (max-width: 1100px) {
-	.he {
+	.hee {
 		height: 500px;
 	}
 
-	.he h1 {
+	.hee h1 {
 		font-size: 48px;
 	}
 
-	.he h3 {
+	.hee h3 {
 		font-size: 24px;
 	}
 
-	.he a.btn {
+	.hee a.btn {
 		margin: 20px;
 		padding: 20px 20px;
 	}
 
-	.he{
+	.hee{
 		background-size: cover;
 		background-position:center;
 	}
 
-	.he .hero-content-area {
-		top:25%;
-		left:30%;
+	.hee .hero-content-area {
+		top:40%;
+		left:20%;
+	}
+    .hee .hero-content-area img{
+		width:300px
 	}
 }
 
@@ -1420,10 +1426,10 @@ footer hr{
 }
 
 .slider_item:nth-child(odd){
-	background-color:#Fff;
+	background-color:#1B4821;
 }
 .slider_item:nth-child(even){
-	background-color:#FFf;
+	background-color:#1B4821;
 }
 .showing{
 	opacity: 1;
@@ -1501,3 +1507,31 @@ background-size: contain;
 		flex-basis:80%;
 	}
 }
+
+
+
+.verytop3{
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    display:block;
+    background:#1B4821;
+    color:#fff;
+    text-align:center;
+    height:60px;
+    font-size:18px;
+    z-index:5;
+   }
+   
+   .verytop3 ul{
+       display:flex;
+       flex-direction: row;
+       justify-content: space-around;
+       padding-top:10px;
+   }
+   
+   .verytop3 a{
+       padding: 10px;
+       color:#fff;
+       font-weight: 900;
+   }
