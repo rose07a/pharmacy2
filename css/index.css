@@ -1166,7 +1166,7 @@ a.tele{
 footer{
 	padding:0 20px;
 	background-color: #1B4821;
-	padding-top:40px;
+    padding-top: 40px;
 }
 
 footer img{
@@ -1235,7 +1235,7 @@ footer hr{
 	footer div{
 		text-align: left;
 		margin-bottom: 10px;
-	    margin: 5%;
+        margin:5%;
 	}
 
 	.footergrid li{
@@ -1444,4 +1444,60 @@ background-position: center;
 background-size: contain;
 }
 
+}
+
+
+
+/*Testimonials Section*/
+
+
+.back123{
+	background-image: url("../img/hand.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	width:100%;
+	height:700px;
+	display:flex;
+	align-items: center;
+	text-align: center;
+}
+
+.testimonials{
+	display:flex;
+	justify-content: space-around;
+	flex-direction:row;
+	flex-wrap:wrap;
+	text-align: center;
+}
+
+.testimonials div{
+	color:#1B4821;
+    font-weight: 300;
+	flex-basis:30%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.testimonials i{
+	font-size: 30px;
+}
+
+.testimonials .iright{
+	text-align: right;
+}
+
+.testimonials .ileft{
+	text-align: left;
+}
+
+@media (max-width: 800px) {
+	.testimonials{
+		flex-direction: column;
+	}
+
+	.testimonials div{
+		flex-basis:80%;
+	}
 }
